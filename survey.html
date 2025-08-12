@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Feedback</title>
+<style>
+    body { font-family: Arial; background: #f2f2f2; padding: 20px; }
+    form { background: white; padding: 20px; border-radius: 8px; width: 400px; margin: auto; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 6px; margin-top: 4px; border: 1px solid #ccc; border-radius: 4px; }
+    input[type=radio], input[type=checkbox] { width: auto; }
+    button { margin-top: 10px; padding: 8px 12px; background: #007bff; color: white; border: none; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<form>
+    <h2>Customer Feedback Survey</h2>
+    <label>Name:</label>
+    <input type="text">
+
+    <label>Email:</label>
+    <input type="email">
+
+    <label>Age:</label>
+    <input type="number">
+
+    <label>Date of Visit:</label>
+    <input type="date">
+
+    <label>Gender:</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+
+    <label>Services Used:</label>
+    <input type="checkbox"> Food
+    <input type="checkbox"> Delivery
+    <input type="checkbox"> Online Order
+
+    <label>Rate Our Service:</label>
+    <select>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+    </select>
+
+    <label>Overall Satisfaction:</label>
+    <input type="range">
+
+    <label>Upload a Photo (optional):</label>
+    <input type="file">
+
+    <label>Additional Comments:</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit">Submit Survey</button>
+</form>
+
+</body>
+</html>
